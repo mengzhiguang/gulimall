@@ -31,7 +31,7 @@ public class MyCacheConfig {
      */
     @Bean
     public RedisCacheConfiguration redisCacheConfiguration(CacheProperties cacheProperties) {
-
+        System.out.println("xx");
         RedisCacheConfiguration config = RedisCacheConfiguration.defaultCacheConfig();
         // config = config.entryTtl();
         config = config.serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(new StringRedisSerializer()));
