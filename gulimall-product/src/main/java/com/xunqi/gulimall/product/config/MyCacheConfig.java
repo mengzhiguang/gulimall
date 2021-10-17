@@ -13,7 +13,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 /**
  * @Description:
  * @Created: with IntelliJ IDEA.
- * @author: 夏沫止水
+ * @author: 夏沫止水555555
  * @createTime: 2020-06-12 15:19
  **/
 
@@ -31,7 +31,6 @@ public class MyCacheConfig {
      */
     @Bean
     public RedisCacheConfiguration redisCacheConfiguration(CacheProperties cacheProperties) {
-        System.out.println("xx");
         RedisCacheConfiguration config = RedisCacheConfiguration.defaultCacheConfig();
         // config = config.entryTtl();
         config = config.serializeKeysWith(RedisSerializationContext.SerializationPair.fromSerializer(new StringRedisSerializer()));
